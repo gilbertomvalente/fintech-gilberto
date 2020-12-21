@@ -1,22 +1,40 @@
+@charset "UTF-8";
+/* Variables   */
+
+:root {
+	--primary: #6c5dd3;
+	--secondary: #34a5b3;
+	--text-primary: #111;
+	--text-secondary: #777;
+	--border-primary: 0.5px solid blueviolet;
+	--gray-light: #fffafa;
+	--gray2: #f2f2f2;
+	--shadow-primary: 1px 1px 2px gray, 0 0 25px gray, 0 0 5px gray;
+	--header-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	--font-primary: "Roboto", sans-serif;
+}
+
+/* Formatação da página em geral   */
+
 * {
 	margin: 0;
 	padding: 0;
 
-	font-family: "Roboto";
+	font-family: var(--font-primary);
 }
 
-.container-login {
+.login {
 	width: 100vw;
 	height: 100vh;
-	background: snow;
+	background: var(--gray-light);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.mother {
+.login-main {
 	display: flex;
-	box-shadow: 1px 1px 2px gray, 0 0 25px gray, 0 0 5px gray;
+	box-shadow: var(--shadow-primary);
 }
 
 .login-left {
@@ -24,11 +42,11 @@
 	height: 500px;
 }
 
-.logo {
+.login-left-logo {
 	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 0.9rem;
-	color: #6c5dd3;
+	color: var(--primary);
 	text-align: center;
 	margin-top: 5vh;
 }
@@ -54,7 +72,7 @@
 }
 
 .login-left-btn button {
-	background: #6c5dd3;
+	background: var(--primary);
 	padding: 10px 30px;
 	color: white;
 	cursor: pointer;
@@ -65,22 +83,16 @@
 
 .login-left-btn button:hover {
 	transition: 500ms;
-	color: #6c5dd3;
+	color: var(--primary);
 	font-weight: bold;
 	background: white;
-	border: 0.5px solid blueviolet;
+	border: var(--border-primary);
 }
 
 .login-right {
 	width: 500px;
 	height: 500px;
-	background: #6c5dd3;
-}
-
-.login-right {
-	width: 500px;
-	height: 500px;
-	background: #6c5dd3;
+	background: var(--primary);
 }
 
 .login-right-title {
@@ -100,16 +112,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	fill: white;
-	stroke: #f2f2f2;
+	fill: #ffffff;
+	stroke: var(--gray2);
 	stroke-width: 5;
 }
 
 .login-right-icons a img {
 	width: 30px;
 	margin-right: 10px;
-	fill: white;
-	stroke: #f2f2f2;
+	fill: #ffffff;
+	stroke: var(--gray2);
 	stroke-width: 5;
 }
 
@@ -126,13 +138,13 @@
 }
 
 .form input {
-	font-family: "Roboto", sans-serif;
+	font-family: var(--font-primary);
 	font-size: 16px;
 	color: #444444;
 }
 
 input {
-	background-color: #f2f2f2;
+	background-color: var(--gray2);
 	border: none;
 	border-radius: 2px;
 	width: 250px;
@@ -191,7 +203,7 @@ input#senha {
 .btn {
 	background: #ffffff;
 	padding: 12px 40px;
-	color: #6c5dd3;
+	color: var(--primary);
 	cursor: pointer;
 	border-radius: 5px;
 	border: none;
@@ -200,8 +212,8 @@ input#senha {
 
 .btn:hover {
 	transition: 500ms;
-	color: #6c5dd3;
+	color: var(--primary);
 	font-weight: bold;
-	background: white;
-	border: 0.5px solid blueviolet;
+	background: #ffffff;
+	border: var(--border-primary);
 }
