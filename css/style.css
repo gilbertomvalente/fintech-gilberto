@@ -2,15 +2,13 @@
 /* Variables   */
 
 :root {
-	--primary: #6c5dd3;
-	--secondary: #34a5b3;
+	--color-primary: #6c5dd3;
+	--color-gray-light: #fffafa;
+	--color-gray2: #f2f2f2;
 	--text-primary: #111;
 	--text-secondary: #777;
 	--border-primary: 0.5px solid blueviolet;
-	--gray-light: #fffafa;
-	--gray2: #f2f2f2;
 	--shadow-primary: 1px 1px 2px gray, 0 0 25px gray, 0 0 5px gray;
-	--header-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 	--font-primary: "Roboto", sans-serif;
 }
 
@@ -26,7 +24,7 @@
 .login {
 	width: 100vw;
 	height: 100vh;
-	background: var(--gray-light);
+	background: var(--color-gray-light);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -46,7 +44,7 @@
 	font-size: 3rem;
 	font-weight: 400;
 	letter-spacing: 0.9rem;
-	color: var(--primary);
+	color: var(--color-primary);
 	text-align: center;
 	margin-top: 5vh;
 }
@@ -72,7 +70,7 @@
 }
 
 .login-left-btn button {
-	background: var(--primary);
+	background: var(--color-primary);
 	padding: 10px 30px;
 	color: white;
 	cursor: pointer;
@@ -83,7 +81,7 @@
 
 .login-left-btn button:hover {
 	transition: 500ms;
-	color: var(--primary);
+	color: var(--color-primary);
 	font-weight: bold;
 	background: white;
 	border: var(--border-primary);
@@ -92,7 +90,7 @@
 .login-right {
 	width: 500px;
 	height: 500px;
-	background: var(--primary);
+	background: var(--color-primary);
 }
 
 .login-right-title {
@@ -113,7 +111,7 @@
 	align-items: center;
 	justify-content: center;
 	fill: #ffffff;
-	stroke: var(--gray2);
+	stroke: var(--color-gray2);
 	stroke-width: 5;
 }
 
@@ -121,7 +119,7 @@
 	width: 30px;
 	margin-right: 10px;
 	fill: #ffffff;
-	stroke: var(--gray2);
+	stroke: var(--color-gray2);
 	stroke-width: 5;
 }
 
@@ -144,7 +142,7 @@
 }
 
 input {
-	background-color: var(--gray2);
+	background-color: var(--color-gray2);
 	border: none;
 	border-radius: 2px;
 	width: 250px;
@@ -203,7 +201,7 @@ input#senha {
 .btn {
 	background: #ffffff;
 	padding: 12px 40px;
-	color: var(--primary);
+	color: var(--color-primary);
 	cursor: pointer;
 	border-radius: 5px;
 	border: none;
@@ -212,7 +210,7 @@ input#senha {
 
 .btn:hover {
 	transition: 500ms;
-	color: var(--primary);
+	color: var(--color-primary);
 	font-weight: bold;
 	background: #ffffff;
 	border: var(--border-primary);
