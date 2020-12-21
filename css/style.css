@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto";
+}
+
+.container-login {
+	width: 100vw;
+	height: 100vh;
+	background: snow;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.mother {
+	display: flex;
+	box-shadow: 1px 1px 2px gray, 0 0 25px gray, 0 0 5px gray;
+}
+
+.login-left {
+	width: 500px;
+	height: 500px;
+}
+
+.logo {
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 0.9rem;
+	color: #6c5dd3;
+	text-align: center;
+	margin-top: 5vh;
+}
+.login-left-img {
+	background-image: url(../assets/bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	height: 250px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.login-left-btn {
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-left-btn button {
+	background: #6c5dd3;
+	padding: 10px 30px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	letter-spacing: 0.2rem;
+}
+
+.login-left-btn button:hover {
+	transition: 500ms;
+	color: #6c5dd3;
+	font-weight: bold;
+	background: white;
+	border: 0.5px solid blueviolet;
+}
+
+.login-right {
+	width: 500px;
+	height: 500px;
+	background: #6c5dd3;
+}
+
+.login-right {
+	width: 500px;
+	height: 500px;
+	background: #6c5dd3;
+}
+
+.login-right-title {
+	color: #ffffff;
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-right-icons {
+	width: 30%;
+	height: 50px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	fill: white;
+	stroke: #f2f2f2;
+	stroke-width: 5;
+}
+
+.login-right-icons a img {
+	width: 30px;
+	margin-right: 10px;
+	fill: white;
+	stroke: #f2f2f2;
+	stroke-width: 5;
+}
+
+/* Task Juliane */
+
+.login-right-form {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.form input {
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: #444444;
+}
+
+input {
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 2px;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 15px;
+	padding: 5px;
+	padding-left: 45px;
+}
+
+input#nome {
+	background-image: url("../assets/icones/usuario.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 10px;
+}
+
+input#email {
+	background-image: url("../assets/icones/email.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 10px;
+}
+
+input#senha {
+	background-image: url("../assets/icones/cadeado.png");
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position: 10px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+.login-Name {
+	/*OBS.: CASO O CSS NAO SEJA O DO FIGMA FALA QUE EU TIRO OQUE NAO É NECESSÁRIO*/
+	/* Css Corrigido por Gomes, */
+	color: #ffffff;
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Task Lucas Garcia */
+.login-right-btn {
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Css alterado por Gomes, corrigindo tamanho , e adicionando hover */
+.btn {
+	background: #ffffff;
+	padding: 12px 40px;
+	color: #6c5dd3;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	letter-spacing: 0.2rem;
+}
+
+.btn:hover {
+	transition: 500ms;
+	color: #6c5dd3;
+	font-weight: bold;
+	background: white;
+	border: 0.5px solid blueviolet;
+}
